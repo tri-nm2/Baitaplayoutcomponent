@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import NavBar from "./components/baitaplayoutcomponent/navbarComponent/navbar";
+import Header from "./components/baitaplayoutcomponent/headerComponent/header";
+import FeatureList from "./components/baitaplayoutcomponent/featureListComponent/featureList";
+import Footer from "./components/baitaplayoutcomponent/footerComponent/footer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <Header />
+      <FeatureList />
+      <Footer />
     </div>
   );
 }
